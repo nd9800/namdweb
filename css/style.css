@@ -1,0 +1,31 @@
+body{
+    background-image: url("../img/abstract-79-12ab-ab02-b.jpg");/* di len 1 folder thi ../, 2 folder thi ../../  ....*/
+    background-repeat: no-repeat;
+    /* không lặp lại ảnh nền nếu ảnh nhỏ */
+    background-position: center;
+    /* vị trí ảnh ở giữa*/
+    background-size: cover;
+}
+h1{
+    font-size: 100px;
+   /* cỡ chữ */
+    font-family:'Lato';
+   /* font chữ */
+    font-weight: 300;/* 100 200 300 400 500 600 700 800 900  trong  đó 400 là mức normal*/
+    /* độ đậm của chữ */
+    line-height: 2;/* spacing trong word*/
+    /* độ cao của dòng */
+    text-decoration: none ;
+    /* underline line-through overline none */
+    text-align: center;
+    /* căn nội dung, left, right justify căn đều, center là căn giữa */
+    color: #ff1122;/* rgb(255,17,34)*/
+    /*#ff112250 thêm 50 để làm mờ 50%, 90 mờ 10%*/
+    background-color: #f5f5dc;
+    /* màu nền */
+    border:10px solid #ff1122;
+    border-bottom: 10px solid #f5f5dc;
+    /* đường biên của ô, solid là độ dày mỏng, tiếp đến là màu sắc */
+    /* dotted : chấm*/
+    /* border - bottom , top , left, right : chỉ muốn viền ở một hường*/
+}
