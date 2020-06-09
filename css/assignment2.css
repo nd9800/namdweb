@@ -11,6 +11,7 @@ h1
     font-size: 12px;
     border-bottom: 1px solid #ff0068 ;
     font-style: normal;
+    font-weight: 400;
 }
 p{
     font-size: x-small;
@@ -34,4 +35,5 @@ h3
     margin-left: 10px;
     font-size: x-small;
     font-style: normal;
+    font-weight: 400;
 }
