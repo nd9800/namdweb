@@ -30,16 +30,17 @@ body{
     background-color: indianred;
     color:white;
 }
-.readmore
-{   margin: 0px;
-    padding: 5px;
-    background-color: orange;
-    height:20px;
-    width:60px;
-}
+
 .readmoretext
 {
     font-size: 10px;
+    background-color: indianred;
+    margin: 0px;
+    padding: 5px;
+    height:20px;
+    width:80px;
+    border: 1px solid indianred;
+
 }
 .leftbox2
 {
