@@ -1,0 +1,167 @@
+*
+{
+    padding: 0 ;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Balsamiq Sans';
+    background-image: linear-gradient(to right, cornflowerblue , #8d0eff);
+}
+
+.container
+{
+    width:800px;
+    margin:0 auto;
+
+}
+.content{
+    background-color: white;
+    padding:60px 0;
+    border-bottom:1px solid grey;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:100%;
+    float:left;
+}
+.header .container
+{
+    padding:20px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header,.main,.footer
+{
+    float:left;
+    width:100%;
+}
+.header
+{
+    text-align: center;
+    padding-top:20px;
+    font-size:25px;
+    color:white;
+}
+.header p
+{
+    font-weight:700;
+}
+.cat-name,.cat-company,.cat-email,.cat-phone,.cat-subject
+{
+    width:100%;
+    float:left;
+    margin-bottom: 30px;
+}
+.label
+{
+    width:30%;
+    float:left;
+    padding-left:100px;
+    padding-top:15px;
+}
+.label p
+{
+    font-size:18px;
+    font-weight: 700;
+}
+.cat-name .cat-left
+{
+    width:30%;
+    float:left;
+    padding-left:10px ;
+}
+.cat-name .cat-left .input-text
+{
+    width:200px;
+}
+.cat-name .cat-right .input-text
+{
+    width:200px;
+}
+.cat-name .cat-right
+{
+    width:30%;
+    float:right;
+    margin-right:70px;
+}
+.input-text
+{
+    width:150px;
+    height:45px;
+    border-radius: 5px;
+    background-color: #d9d9d9;
+    margin-bottom: 5px ;
+    border:none;
+    font-size:17px;
+    padding-left:10px;
+
+}
+.description
+{
+    color: #c6c6c6;
+}
+.input-text:focus
+{
+    outline:none;
+}
+.cat-center
+{
+    width:60%;
+    float:left;
+    padding-left:10px ;
+}
+.cat-center .input-text
+{
+width:440px;
+}
+.cat-phone .cat-left
+{
+    width:20%;
+    float:left;
+    padding-left:10px ;
+}
+.cat-phone .cat-right
+{
+    width:40%;
+    float:right;
+    margin-right:80px;
+
+}
+
+.cat-phone .cat-left .input-text
+{
+width:110px;
+}
+.cat-phone .cat-right .input-text {
+
+    width: 290px;
+}
+.question
+{   padding:20px 0 5px 100px;
+    width:100%;
+    float:left;
+}
+.question p{
+    margin-bottom:20px;
+    font-weight: 700;
+}
+.question label
+{
+    padding-right:20px;
+
+}
+.button
+{
+
+    float:left;
+    margin-top:20px;
+    margin-left:100px;
+   padding:10px 20px;
+    border-radius:5px;
+    width:140px;
+    text-align:center;
+    color:white;
+    background-color: #e85656;
+}
