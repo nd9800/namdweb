@@ -23,6 +23,7 @@ body{
     border-bottom-right-radius: 10px;
     width:100%;
     float:left;
+    margin-bottom: 50px;
 }
 .header .container
 {
@@ -40,7 +41,7 @@ body{
 .header
 {
     text-align: center;
-    padding-top:20px;
+    padding-top:40px;
     font-size:25px;
     color:white;
 }
