@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/animation.css"/>
+</head>
+<body>
+
+<!--Cách 1 -->
+<script type="text/javascript">
+    /*alert("Cam tre em duoi 18 tuoi");*/
+   /* if(confirm("Ban chac chan gui bai thi?"))
+    console.log("Nộp xong, chờ kết quả..");
+    else
+    {
+        console.log("Tiếp tục thi..");
+    }*/
+
+    let a=[];
+    for (let i = 0; i < 5; i++) {
+        a[i] = prompt("Chọn con số may mắn thứ " + (i + 1));
+
+        for(let j=0; j<i;j++)
+        {
+            while(a[i]==a[j])
+            {
+                a[i]= prompt("Nhập trùng, nhập lại số thứ " + (i + 1));
+            }
+        }
+    }
+
+
+
+    var num = [];
+    num[0]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
+    num[1]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
+    num[2]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
+    num[3]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
+    num[4]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
+    console.log(num[0]);
+    console.log(num[1]);
+    console.log(num[2]);
+    console.log(num[3]);
+    console.log(num[4]);
+    let cnt=0;
+    for (let i = 0; i < 5; i++) {
+        {
+            if(a[i]==num[0]||a[i]==num[1]||a[i]==num[2]||a[i]==num[3]||a[i]==num[4])
+            {
+                cnt++;
+                break;
+            }
+        }
+
+    }
+    if(cnt==5)
+    {
+        alert("Chuc mung ban da trung giai");
+    }
+    else
+    {
+        alert("Chuc ban may man lan sau");
+    }
+
+
+
+    /*console.log(x);*/
+</script>
+
+</body>
+</html>
