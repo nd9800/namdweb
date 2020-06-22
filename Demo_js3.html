@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo JS3</title>
+</head>
+<body>
+<h1 id="heading">Lớp</h1>
+<h2 id="sub-heading1">Giáo viên</h2>
+<h2 id="sub-heading2">Phòng Học</h2>
+<h3>Danh sách sinh viên</h3>
+<ul id="students"></ul>
+<script type="text/javascript">
+    let classroom =
+        {
+            name:"T2004E",
+            phonghoc:{
+                number: 8,
+            },
+
+                teacher:{
+                    name: "Quang Hoa",
+                    age:31
+                },
+                sinhvien:[
+                    {
+                        name:"Name1",
+                        age:"Age"
+                    },
+                    {
+                        name:"Name2",
+                        age:"Age"
+                    },
+                    {
+                        name:"Name3",
+                        age:"Age"
+                    },{
+                        name:"Name4",
+                        age:"Age"
+                    },{
+                        name:"Name5",
+                        age:"Age"
+                    },
+                    {
+                        name:"Name6",
+                        age:"Age"
+                    },
+                    {
+                        name:"Name7",
+                        age:"Age"
+                    }
+                    ]
+
+
+
+
+        }
+    let h1 = document.getElementById("heading");//h1 là dom element với id là heading
+   /* console.log(h1.innerText);
+    h1.innerText = "Xin Chào Các Bạn";
+    h1.style.color= "red";
+    h1.style.backgroundColor="yellow";
+    h1.style.borderBottom="1px solid green";
+    h1.innerHTML="<i>"+h1.innerText+"</i>" //nối chuỗi
+    */
+    h1.innerText= h1.innerText+ classroom.name;
+    let h2_s1= document.getElementById("sub-heading1");
+    h2_s1.innerText=h2_s1.innerText+ classroom.teacher.name;
+    let h2_s2= document.getElementById("sub-heading2");
+    h2_s2.innerText=h2_s2.innerText+ classroom.phonghoc.number;
+    let ul = document.getElementById("students");
+    classroom.sinhvien.map(function(e){
+        let li="<li>"+e.name+"</li>";
+        ul.innerHTML=ul.innerHTML+li;
+    });
+    for(let i = 0; i<classroom.sinhvien.length; i++)
+    {
+        let li = "<li><b>"+classroom.sinhvien[i].name+"</b><i>"+classroom.sinhvien[i].age+"</i></li>";
+        ul.innerHTML=ul.innerHTML+li;
+    }
+
+</script>
+</body>
+</html>

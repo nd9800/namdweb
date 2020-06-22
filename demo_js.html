@@ -23,16 +23,17 @@
 
         for(let j=0; j<i;j++)
         {
-            while(a[i]==a[j])
+            while(a[i] == a[j])
             {
                 a[i]= prompt("Nhập trùng, nhập lại số thứ " + (i + 1));
+                j=0;
             }
         }
     }
 
 
 
-    var num = [];
+    let num = [];
     num[0]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
     num[1]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/
     num[2]=parseInt(Math.random()*100); /*Hàm Math.random sẽ trả giá trị số thực từ 0-1 nên *100 và parseInt để ra nguyên*/

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoJS</title>
+</head>
+<body>
+<script type="text/javascript">
+    let obj =
+        { //bên dưới là các attributes(variables....)
+        name : "Nguyen Van An",
+        age:18,
+        address:"8 Ton That Thuyet",
+            //bên dưới là các behaviors(functions)
+            run: function()
+            {
+                console.log(this.name+" is running...");// this là đối tượng ngầm định
+            },
+            girlFriends:
+                ["Ngoc Trinh","Phuong Trinh"],
+            goToHotel:function(){
+        /*    for(let i = 0; i< this.girlFriends.length;i++)
+            {
+              console.log("DI hotel voi "+this.girlFriends[i]);
+            }*/
+                this.girlFriends.map(function(e){
+                console.log("DI hotel voi "+ e);}
+            )
+            },
+
+
+        children:{
+            name:"Nguyen Van Binh",
+            birthday:"22-5-1999",
+            children: {
+                name:"Nguyen Van Nam",
+                eat: function()
+                {
+                    console.log("Uong sua");
+                    return this;
+                },
+                sleep: function()
+    {
+        console.log("Di ngu");
+        return this;
+    }
+            }
+        }
+
+
+    };
+    console.log(obj.name);
+    console.log(obj.address);
+    obj.run();
+    console.log("Ten cua con la : " +obj.children.name);
+    console.log("Ten cua chau la : "+obj.children.children.name);
+    obj.children.children.eat();
+    obj.children.children.sleep();
+    obj.children.children.eat().sleep();
+    obj.name="Nguyen Van Anh";
+    console.log(obj.name);
+let classroom =
+    {
+        name:"T2004E",
+        phonghoc:{
+            number: 8,
+        },
+        person:{
+            teacher:{
+                name: "Quang Hoa",
+                age:31
+            },
+            sinhvien:
+                {
+                    name:"Name",
+                    age:"Age"
+                }
+        }
+
+
+
+    }
+    console.log("Ten giao vien la : " +classroom.person.teacher.name);
+    classroom.person.sinhvien.name="Nguyen Van Anh";
+    console.log("Ten sinh vien thu nhat la : " +classroom.person.sinhvien.name);
+    classroom.person.sinhvien.name="Nguyen Van B";
+    console.log("Ten sinh vien thu hai la : " +classroom.person.sinhvien.name);
+
+</script>
+</body>
+</html>
