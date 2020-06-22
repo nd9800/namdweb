@@ -54,18 +54,13 @@
         name : "Tawarano",
         cod :200
     }
-    let h1 = document.getElementById("city");
-    h1.innerText= h1.innerText +" "+currentWeather.name+" - " +currentWeather.sys.country;
-    let h1_s1 = document.getElementById("temp");
-    h1_s1.innerText= h1_s1.innerText +" "+currentWeather.main.temp +" K";
-    let h1_s2 = document.getElementById("pressure");
-    h1_s2.innerText= h1_s2.innerText +" "+currentWeather.main.pressure;
-    let h1_s3 = document.getElementById("humidity");
-    h1_s3.innerText= h1_s3.innerText +" "+currentWeather.main.humidity;
-    let h1_s4 = document.getElementById("min_maxtemp");
-    h1_s4.innerText= h1_s4.innerText +" "+currentWeather.main.temp_min+" - "+currentWeather.main.temp_max;
-    let h1_s5 = document.getElementById("sealv");
-    h1_s5.innerText= h1_s5.innerText +" "+currentWeather.main.sea_level;
+
+    document.getElementById("city").innerHTML= document.getElementById("city").innerHTML+" "+currentWeather.name+" - " +currentWeather.sys.country;
+    document.getElementById("temp").innerHTML= document.getElementById("temp").innerHTML +" "+currentWeather.main.temp +" K";
+    document.getElementById("pressure").innerHTML= document.getElementById("pressure").innerHTML +" "+currentWeather.main.pressure;
+    document.getElementById("humidity").innerHTML= document.getElementById("humidity").innerHTML +" "+currentWeather.main.humidity;
+    document.getElementById("min_maxtemp").innerHTML= document.getElementById("min_maxtemp").innerHTML +" "+currentWeather.main.temp_min+" - "+currentWeather.main.temp_max;
+    document.getElementById("sealv").innerHTML= document.getElementById("sealv").innerHTML +" "+currentWeather.main.sea_level;
 
 </script>
 </body>
