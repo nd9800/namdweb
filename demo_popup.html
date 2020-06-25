@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Pop-up</title>
+    <link rel="stylesheet" type="text/css" href="css/popup.css"/>
+</head>
+<body>
+<button class="btn" onclick="popup()">Open Pop-up</button>
+<div id="popup">
+    <img src="img/abstract-79-12ab-ab02-b.jpg"/>
+</div>
+<div id="bg-fade" onclick="closePopup()">
+
+</div>
+<script type="text/javascript">
+    function popup(){
+        document.getElementById("popup").style.opacity=1;
+        document.getElementById("popup").style.zIndex=10;
+        document.getElementById("bg-fade").style.opacity=1;
+        document.getElementById("bg-fade").style.zIndex=9;
+    }
+    function closePopup(){
+        document.getElementById("popup").style.opacity=0;
+        document.getElementById("popup").style.zIndex=-1;
+        document.getElementById("bg-fade").style.opacity=0;
+        document.getElementById("bg-fade").style.zIndex=-2;
+    }
+</script>
+</body>
+</html>

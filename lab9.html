@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab9</title>
+    <link rel="stylesheet" type="text/css" href="css/lab9.css"/>
+
+</head>
+<body>
+<div class="container">
+    <h1 style="margin:40px 0">Xác định vị trí trong Tabs</h1>
+<button id="btn1" onclick="scrolldown1()" >Home</button>
+<button id="btn2" onclick="scrolldown2()">Profiles</button>
+<button id="btn3" onclick="scrolldown3()">Messages</button>
+<button id="btn4"onclick="scrolldown4()">Settings</button>
+    <div id="content-home"><p>This is Home content</p></div>
+    <div id="content-profiles"><p>This is Profiles content</p></div>
+    <div id="content-messages"><p>This is Messages content</p></div>
+    <div id="content-settings"><p>This is Settings content</p></div>
+<script type="text/javascript">
+function scrolldown1()
+{
+    document.getElementById("content-home").style.display="block";
+    document.getElementById("btn1").style.border="1px solid black";
+    document.getElementById("btn2").style.border="0";
+    document.getElementById("btn3").style.border="0";
+    document.getElementById("btn4").style.border="0";
+    document.getElementById("btn1").style.borderBottom="0";
+    document.getElementById("btn2").style.borderBottom="1px solid black";
+    document.getElementById("btn3").style.borderBottom="1px solid black";
+    document.getElementById("btn4").style.borderBottom="1px solid black";
+    document.getElementById("content-profiles").style.display="none";
+    document.getElementById("content-messages").style.display="none";
+    document.getElementById("content-settings").style.display="none";
+
+}function scrolldown2()
+{
+    document.getElementById("content-home").style.opacity=0;
+    document.getElementById("btn2").style.border="1px solid black";
+    document.getElementById("btn1").style.border="0";
+    document.getElementById("btn3").style.border="0";
+    document.getElementById("btn4").style.border="0";
+    document.getElementById("btn1").style.borderBottom="1px solid black";
+    document.getElementById("btn2").style.borderBottom="0";
+    document.getElementById("btn3").style.borderBottom="1px solid black";
+    document.getElementById("btn4").style.borderBottom="1px solid black";
+    document.getElementById("content-profiles").style.opacity=1;
+    document.getElementById("content-messages").style.opacity=0;
+    document.getElementById("content-settings").style.opacity=0;
+
+}function scrolldown3()
+{
+    document.getElementById("content-home").style.opacity=0;
+    document.getElementById("btn3").style.border="1px solid black";
+    document.getElementById("btn1").style.border="0";
+    document.getElementById("btn2").style.border="0";
+    document.getElementById("btn4").style.border="0";
+    document.getElementById("btn1").style.borderBottom="1px solid black";
+    document.getElementById("btn2").style.borderBottom="1px solid black";
+    document.getElementById("btn3").style.borderBottom="0";
+    document.getElementById("btn4").style.borderBottom="1px solid black";
+    document.getElementById("content-profiles").style.opacity=0;
+    document.getElementById("content-messages").style.opacity=1;
+    document.getElementById("content-settings").style.opacity=0;
+
+}function scrolldown4()
+{
+    document.getElementById("content-home").style.opacity=0;
+    document.getElementById("btn4").style.border="1px solid black";
+    document.getElementById("btn1").style.border="0";
+    document.getElementById("btn2").style.border="0";
+    document.getElementById("btn3").style.border="0";
+    document.getElementById("btn1").style.borderBottom="1px solid black";
+    document.getElementById("btn2").style.borderBottom="1px solid black";
+    document.getElementById("btn3").style.borderBottom="1px solid black";
+    document.getElementById("btn4").style.borderBottom="0";
+    document.getElementById("content-profiles").style.display="block";
+    document.getElementById("content-messages").style.opacity=0;
+    document.getElementById("content-settings").style.opacity=1;
+
+}
+
+</script>
+</div>
+</body>
+</html>

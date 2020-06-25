@@ -1,0 +1,38 @@
+*
+{
+    margin:0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+.container
+{
+    height:400px;
+    width:400px;
+    float:left;
+    position:relative;
+    margin-left:50px;
+}
+#btn1,#btn2,#btn3,#btn4
+{
+    float:left;
+    font-size:14px;
+    color:black;
+    background-color: white;
+    outline: none;
+    padding:5px 10px;
+    border:0;
+    border-radius:0;
+    border-bottom: 1px solid black;
+}
+
+
+#content-home,#content-profiles,#content-messages,#content-settings
+{
+ float:left;
+    display:none;
+    position:absolute;
+    top:190px;
+    left:0;
+
+}
+
