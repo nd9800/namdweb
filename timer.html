@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10Mins Timer</title>
+</head>
+<body>
+<h1 id="time" style="text-align: center"></h1>
+<script type="text/javascript">
+    var handler = function() {
+        var sec = 60;
+        var min = 60;
+        for (i = 0; i < 60; i--) {
+            {
+                sec=i;
+                if(i==0)
+                {
+                    min--;
+                    document.getElementById("time").textContent = (min < 10 ? "0" + min : min) + ":" + (sec < 10 ? "0" + sec : sec);
+                }
+            }
+        }
+    }
+    ;
+    setInterval(handler, 1000);
+    handler();
+
+</script>
+</body>
+</html>

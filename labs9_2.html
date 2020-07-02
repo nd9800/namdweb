@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab S9 chữa</title>
+    <link rel="stylesheet" type="text/css" href="css/labs9.css"/>
+</head>
+<body>
+<ul class="tab">
+    <li><a href="javascript:void(0);" onclick="navTab(0)">Home</a></li>
+    <li><a href="javascript:void(0);" onclick="navTab(1)">Profile</a></li>
+    <li><a href="javascript:void(0);" onclick="navTab(2)">Messages</a></li>
+    <li><a href="javascript:void(0);" onclick="navTab(3)">Setting</a></li>
+</ul>
+<div class="content">
+    <div class="content_all" id="content_all">
+    <div id="home" class="tab_content" >Home content</div>
+    <div id="profile" class="tab_content">Profile content</div>
+    <div id="messages" class="tab_content">Messages content</div>
+    <div id="setting" class="tab_content">Setting content</div>
+</div>
+</div>
+<script type="text/javascript">
+    function navTab(e)
+    {
+       /* let tabs=document.getElementsByClassName("tab_content");//collection, phải duyệt từng phần tử để xử lý
+        for(let i = 0; i <tabs.length;i++)
+        {
+            tabs[i].style.display="none";
+        }
+        let id = e.getAttribute("href");
+        id=id.replace("#","");
+        console.log(id);
+        document.getElementById(id).style.display="block";*/
+        document.getElementById("content_all").style.transform="translateX(-"+(e*400)+"px)";
+    }
+    setTimeout(function()
+    {
+     //alert("1 nguoi vua vao web");
+    },3000);
+var stv = setInterval(function(){
+    alert("1 nguoi vua vao web");
+    f++;
+    if(f<4)
+    {
+        clearInterval(stv);
+    }
+},3000)
+</script>
+</body>
+</html>

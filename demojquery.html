@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DemoJQuery</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<p class="pp">Doan van so 1</p>
+<p class="pp">Doan van so 2</p>
+<p class="pp">Doan van so 3</p>
+<ul class="list">
+    <li>Mì tôm</li>
+    <li>Bánh mì</li>
+    <li>Xôi xéo</li>
+    <li>Cơm gà</li>
+</ul>
+
+<button onclick="Open()">Open</button>
+<button onclick="Close()">Close</button>
+<button onclick="Auto()">Auto</button>
+<button class="move" onclick="Move()">Move</button>
+
+<script type="text/javascript">
+    /*let px = $(".pp");*/
+    $("p.pp").css("color","red");
+    $("ul li:first-child").css("color","blue");
+
+    $("ul li:first-child").next().css("color","green");
+    $("ul li:first-child").next().next().css("color","red");
+    $("ul li:first-child").parent().css("background-color","yellow");
+    $("ul li:last-child").css({
+        "color":"blue",
+        "background-color":"grey"
+    });
+ $("ul li:first-child").text();
+   /* $("ul li:first-child").text("Day la noi dung moi");*/
+    $("ul li:first-child").text($("ul li:first-child").text()+" trứng");
+    $("ul li:first-child").html("<h1>Bánh mỳ trứng</h1>");
+    $("ul li:first-child").addClass("active");
+    function Open()
+    {
+        /*$("ul").show();*/
+       /* $("ul").fadeIn();*/ /*trong ngoặc là duration mặc đinh là 150ms*/
+        $("ul").slideDown();
+    };
+    function Close()
+    {
+      /*  $("ul").hide();*/
+       /* $("ul").fadeOut();*/
+        $("ul").slideUp();
+    }
+    function Auto()
+    {
+        $("ul").toggle(); /*nếu đang ẩn thì thành hiện còn hiện thành ẩn, bản chất là kết hợp cả show với hide tạo thành 1 nút*/
+       /* $("ul").slideToggle(); toggle với hiệu ứng slide
+        $("ul").fadeToggle(); toggle với hiệu ứng fade*/
+
+    }
+
+    $(".move").bind("click",function(){ /*bind hết các event thuộc class.move click đều thực hiện */
+        if($("ul").hasClass("active")) {
+            $("ul").animate({
+                "margin-left": "0px"
+
+            }, 500);
+            $("ul").removeClass("active");
+        }
+        else
+        {
+            $("ul").animate({
+                "margin-left":"200px"
+            },500);
+            $("ul").addClass("active");
+        }
+    })
+    $(".list").bind("mouseenter",function(){
+        console.log("mouse enter list");
+    })
+</script>
+</body>
+</html>

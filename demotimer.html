@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/demotimer.css"/>
+</head>
+<body>
+<div class="container">
+<div><span id="time">10:00</span> </div>
+<script type="text/javascript">
+
+    function startTimer() {
+let timer = 600, min, sec;
+var stv = setInterval(function () {
+min = parseInt(timer / 60, 10);
+sec = parseInt(timer % 60, 10);
+if(min<10)
+{
+    min="0"+min;
+}
+else
+{
+    min=min;
+}
+    if(sec<10)
+    {
+        sec="0"+sec;
+    }
+    else
+    {
+        sec=sec;
+    }
+
+display.innerHTML = min + ":" + sec;
+
+if (timer < 0) {
+alert("Time out!");
+clearInterval(stv);
+
+}
+    timer--;
+
+}, 10);
+}
+;
+let display = document.getElementById("time");
+startTimer(display);
+
+</script>
+</div>
+</body>
+</html>

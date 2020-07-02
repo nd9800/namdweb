@@ -1,0 +1,25 @@
+.container
+{
+    height:400px;
+    width:400px;
+}
+.pic
+
+{
+    max-width:100%;
+
+    display:none;
+
+}
+.button-left
+{
+    position:absolute;
+    top:200px;
+    left:20px;
+}
+.button-right
+{
+    position:absolute;
+    top:200px;
+    left:370px;
+}

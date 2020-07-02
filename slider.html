@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/slider.css"/>
+</head>
+<body>
+<div class="container">
+<img class="pic" src="img/cat1.jpg">
+<img class="pic" src="img/cat2.jpg">
+<img class="pic" src="img/cat3.jpg">
+<img class="pic" src="img/cat4.jpg">
+</div>
+<button class="button-left" onclick="buttonPress(-1)">&#10094;</button>
+<button class="button-right" onclick="buttonPress(+1)">&#10095;</button>
+<script type="text/javascript">
+    let slideNo = 1;
+    imgShow(slideNo);
+
+    function buttonPress(e) {
+        imgShow(slideNo += e);
+    }
+
+    function imgShow(e) {
+        let x = document.getElementsByClassName("pic");
+        console.log(e);
+        if (e > x.length)
+        {
+            slideNo = 1;
+        };
+        if (e < 1)
+        {
+            slideNo = x.length;
+        } ;
+        for (let i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideNo-1].style.display = "block";
+    }
+</script>
+</body>
+</html>
