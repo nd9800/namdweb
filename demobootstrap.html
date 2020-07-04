@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+
+</head>
+<body>
+<!--<div class="a">
+<div class="b col-md-4"></div>
+<div class="c col-md-8">
+    <div class="row">
+    <div class="d col-md-6"></div>
+    <div class="e col-md-6"></div>
+    </div>
+&lt;!&ndash;    mặc định theo bootstrap khi phân vùng sẽ để padding left right là 15px; nếu không muốn để padding thì cho vào div với class là row&ndash;&gt;
+</div>
+</div>-->
+<header class="section">
+<div class="container">
+    <a data-toggle="modal" data-target="#myModal">Login</a>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+    <div class="dropdown">
+        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown trigger
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dLabel">
+            ...
+        </ul>
+    </div>
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">...</div>
+            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+        </div>
+
+    </div>
+</div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cancel"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>ID</label>
+                            <input class="form-control" type="text" name="name" placeholder="ID"/>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Password</label>
+                            <input class="form-control" type="text" name="password" placeholder="Password"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="main section">
+    <div class="container">
+
+        <div class="row">
+            <aside class="col-md-3">
+                Đây là aside left
+            </aside>
+            <div class="content col-md-6">
+                Đây là content
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>#1</td>
+                        <td>Donald Trump</td>
+                        <td>dt@gmail.com</td>
+                        <td>090980</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>#2</td>
+                        <td>Xi Jin Ping</td>
+                        <td>xjp@gmail.com</td>
+                        <td>024980</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>#3</td>
+                        <td>Angela Merkel</td>
+                        <td>am@gmail.com</td>
+                        <td>0250980</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>Donald Trump</td>
+                        <td>dt@gmail.com</td>
+                        <td>090980</td>
+                    </tr>
+                    <tr>
+                        <td>#1</td>
+                        <td>Donald Trump</td>
+                        <td>dt@gmail.com</td>
+                        <td>090980</td>
+                    </tr>
+                    <tr class="alert-danger">
+                        <td>#1</td>
+                        <td>Donald Trump</td>
+                        <td>dt@gmail.com</td>
+                        <td>090980</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <form method="#" action="#">
+                    <div class="row">
+                    <div class="col-md-6">
+
+                        <label><i class="glyphicon glyphicon-user"></i>First Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="Firstname"/>
+                    </div>
+                        <div class="col-md-6">
+                        <label>Full Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="Fullname"/>
+                        </div>
+                        </div>
+
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" type="text" name="name" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input class="form-control" type="text" name="name" placeholder="Password"/>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <aside class="col-md-3">
+                Đây là aside right
+            </aside>
+        </div>
+    </div>
+</section>
+<footer class="section">
+
+</footer>
+<script type="text/javascript" src="js/jquery.js"></script> <!--trước khi gọi bootstrap phải gọi jquery TRƯỚC-->
+<script type="text/javascript" src="lib/bootstrap/js/bootstrap.js">
+
+</script>
+</body>
+</html>

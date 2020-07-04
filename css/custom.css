@@ -1,0 +1,42 @@
+/*
+.a
+{
+    width:800px;
+
+    float:left;
+}
+.b{
+    background-color: #2aabd2;
+    height:300px
+}
+.c
+{
+    background-color: green;
+    height: 300px;
+}
+.d{
+    background-color: red;
+    height:200px;
+}
+.e{
+    background-color: beige;
+    height:200px;
+}*/
+.section
+{
+    width:100%;
+    float:left;
+}
+
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

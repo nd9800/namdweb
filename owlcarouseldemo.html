@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css"/>
+<link rel="stylesheet" type="text/css" href="css/Carous.css"/>
+
+</head>
+<body>
+<div id="owl-demo" class="owl-carousel owl-theme">
+
+    <div class="item"><img class="img-responsive fit-image" src="img/Mobile_Blog-1980s_0.jpg" style="height:400px"/></div>
+    <div class="item"><img class="img-responsive fit-image" src="img/Mobile_Blog-1980s_0.jpg" style="height:400px"/></div>
+    <div class="item"><img class="img-responsive fit-image" src="img/Mobile_Blog-1980s_0.jpg" style="height:400px"/></div>
+
+
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+
+            navigation : true, // Show next and prev buttons
+
+            slideSpeed : 300,
+            paginationSpeed : 400,
+
+            items : 1,
+            itemsDesktop : false,
+            itemsDesktopSmall : false,
+            itemsTablet: false,
+            itemsMobile : false
+
+        });
+
+    });
+
+
+</script>
+
+</body>
+</html>
