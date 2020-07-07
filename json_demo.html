@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+</head>
+<body>
+
+<div class="col-md-3">
+    <label style="font-size:40px">Time</label>
+<h1 id="time"></h1>
+</div>
+<div class="col-md-3">
+    <label style="font-size:40px">Temp</label>
+    <h1 id="temp"></h1>
+</div>
+<div class="col-md-3">
+    <label style="font-size:40px">Description</label>
+    <h1 id="des"></h1>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+    let api_url="http://api.openweathermap.org/data/2.5/forecast";
+    $.ajax({
+        url:api_url,
+        method:"GET",
+        data:{
+            q:"Hanoi,vietnam",
+            appid:"09a71427c59d38d6a34f89b47d75975c",
+            units:"metric"
+        },
+        type:"application/json",
+        success:function(rs){
+            let ls=rs.list;
+            var txt1="";
+            var txt2="";
+            var txt3="";
+         console.log(rs);
+            jQuery.each(ls, function(i,value){
+               let temp= ls[i].main.temp;
+               let time= ls[i].dt_txt;
+               txt1=txt1+temp+'<br/>';
+                txt2=txt2+time+'<br/>';
+                let ls2=ls[i].weather;
+                jQuery.each(ls2,function(j,value)
+                {
+                    let des=ls2[j].description;
+                    txt3=txt3+des+'<br/>'
+                })
+
+            });
+            $("#temp").html(txt1);
+            $("#time").html(txt2);
+            $("#des").html(txt3);
+
+        }
+
+    });
+
+    </script>
+</body>
+</html>
