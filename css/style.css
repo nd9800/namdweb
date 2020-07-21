@@ -1,32 +1,85 @@
-
 body{
-    background-image: url("../img/abstract-79-12ab-ab02-b.jpg");/* di len 1 folder thi ../, 2 folder thi ../../  ....*/
-    background-repeat: no-repeat;
-    /* không lặp lại ảnh nền nếu ảnh nhỏ */
-    background-position: center;
-    /* vị trí ảnh ở giữa*/
-    background-size: cover;
+    background-color:lightgrey;
+
 }
-h1{
-    font-size: 100px;
-   /* cỡ chữ */
-    font-family:'Lato';
-   /* font chữ */
-    font-weight: 300;/* 100 200 300 400 500 600 700 800 900  trong  đó 400 là mức normal*/
-    /* độ đậm của chữ */
-    line-height: 2;/* spacing trong word*/
-    /* độ cao của dòng */
-    text-decoration: none ;
-    /* underline line-through overline none */
-    text-align: center;
-    /* căn nội dung, left, right justify căn đều, center là căn giữa */
-    color: #ff1122;/* rgb(255,17,34)*/
-    /*#ff112250 thêm 50 để làm mờ 50%, 90 mờ 10%*/
-    background-color: #f5f5dc;
-    /* màu nền */
-    border:10px solid #ff1122;
-    border-bottom: 10px solid #f5f5dc;
-    /* đường biên của ô, solid là độ dày mỏng, tiếp đến là màu sắc */
-    /* dotted : chấm*/
-    /* border - bottom , top , left, right : chỉ muốn viền ở một hường*/
+.header
+{
+    background-color: white;
+    height:50px;
+
+
+}
+.logo
+{
+padding-top:15px;
+}
+.menu{
+    text-align:right;
+    padding-top:15px;
+    list-style:none;
+}
+.menu li{
+    display:inline;
+    padding-right:20px;
+}
+.section{
+    padding-top:50px;
+
+}
+.section h1
+{
+    padding-bottom:20px;
+    font-size:30px;
+    font-weight:700;
+    margin:0;
+}
+.section p{
+    padding:2px 0;
+    line-height:1.7;
+    color:grey;
+}
+.section p b{
+    color:black;
+}
+.left-main {
+}
+.right-main
+{
+    list-style:none;
+}
+.right-main
+{
+    line-height:2;
+
+}
+.input-text
+{
+    border:none;
+    border-radius: 0;
+}
+.name-email
+{
+    padding-bottom:30px;
+
+}
+.input-text{
+    width:503px;
+}
+.name-email .input-text
+{
+    width:239px;
+
+}
+.title{
+    padding-bottom:30px;
+}
+.comment .input-text
+{
+    height:150px;
+}
+.btn
+{
+    background-color: cyan;
+    color:white;
+    margin-top:20px;
 }
